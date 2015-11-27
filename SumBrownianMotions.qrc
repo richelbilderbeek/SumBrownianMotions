@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/images">
-        <file>SumBrownianMotions_1_0.png</file>
+        <file>SumBrownianMotions.png</file>
     </qresource>
 </RCC>

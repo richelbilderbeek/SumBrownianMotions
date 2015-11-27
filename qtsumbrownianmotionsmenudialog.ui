@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1068</width>
-    <height>444</height>
+    <width>253</width>
+    <height>339</height>
    </rect>
   </property>
   <property name="font">
@@ -47,7 +47,7 @@ QPlainTextEdit {
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="SumBrownianMotions.qrc">:/images/SumBrownianMotions_1_0.png</pixmap>
+      <pixmap resource="SumBrownianMotions.qrc">:/images/SumBrownianMotions.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
