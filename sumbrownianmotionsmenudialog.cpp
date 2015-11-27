@@ -12,11 +12,8 @@
 
 #include <QFile>
 
-//#include "asciiarter.h"
 #include "sumbrownianmotionsmenudialog.h"
 #include "fileio.h"
-//#include "imagecanvas.h"
-#include "richelbilderbeekprogram.h"
 #include "testtimer.h"
 #include "trace.h"
 #pragma GCC diagnostic pop
@@ -45,9 +42,9 @@ ribi::About ribi::SumBrownianMotionsMenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "SumBrownianMotions",
     "simulation",
-    "the 3rd of May 2015",
+    "November 27th of 2015",
     "2015-2015",
-    "http://www.richelbilderbeek.nl/ToolSumBrownianMotions.htm",
+    "http://www.richelbilderbeek.nl/SumBrownianMotions.htm",
     GetVersion(),
     GetVersionHistory()
   );
@@ -56,40 +53,28 @@ ribi::About ribi::SumBrownianMotionsMenuDialog::GetAbout() const noexcept
   return a;
 }
 
-boost::shared_ptr<const ribi::Program> ribi::SumBrownianMotionsMenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p; //(new ProgramSumBrownianMotions);
-  assert(p);
-  return p;
-}
-
 std::string ribi::SumBrownianMotionsMenuDialog::GetVersion() const noexcept
 {
-  return "1.0";
+  return "2.0";
 }
 
 std::vector<std::string> ribi::SumBrownianMotionsMenuDialog::GetVersionHistory() const noexcept
 {
   return {
     "2015-05-08: Version 1.0: initial version",
+    "2015-11-27: Version 2.0: moved to own GitHub",
   };
 }
 
 ribi::Help ribi::SumBrownianMotionsMenuDialog::GetHelp() const noexcept
 {
   return ribi::Help(
-    "SumBrownianMotions",
-    "Tool to create ASCII art images from images",
+    GetAbout().GetFileTitle(),
+    GetAbout().GetFileDescription(),
     {
       //No additional options
     },
     {
-      "SumBrownianMotions [option]\n",
-      "SumBrownianMotions --about",
-      "",
-      "SumBrownianMotions [picture input filename] [text output filename] [columns = 78]\n",
-      "SumBrownianMotions source.png target.txt",
-      "SumBrownianMotions source.png target.txt 254"
     }
   );
 }

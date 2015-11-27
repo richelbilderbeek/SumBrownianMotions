@@ -1,20 +1,9 @@
-#ifndef MUTUALISMBREAKDOWNERMENUDIALOG_H
-#define MUTUALISMBREAKDOWNERMENUDIALOG_H
+#ifndef SUMBROWNIANMOTIONMENUDIALOG_H
+#define SUMBROWNIANMOTIONMENUDIALOG_H
 
-#include <string>
-#include <vector>
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
-#include <boost/scoped_ptr.hpp>
-
-#include "about.h"
 #include "menudialog.h"
-#pragma GCC diagnostic pop
 
 namespace ribi {
-
-struct SumBrownianMotions;
 
 struct SumBrownianMotionsMenuDialog final : public MenuDialog
 {
@@ -24,7 +13,6 @@ struct SumBrownianMotionsMenuDialog final : public MenuDialog
 
   About GetAbout() const noexcept override;
   Help GetHelp() const noexcept override;
-  boost::shared_ptr<const Program> GetProgram() const noexcept override;
   std::string GetVersion() const noexcept override;
   std::vector<std::string> GetVersionHistory() const noexcept override;
 
@@ -37,4 +25,4 @@ struct SumBrownianMotionsMenuDialog final : public MenuDialog
 
 } //~namespace ribi
 
-#endif // MUTUALISMBREAKDOWNERMENUDIALOG_H
+#endif // SUMBROWNIANMOTIONMENUDIALOG_H
