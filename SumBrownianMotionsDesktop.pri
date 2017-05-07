@@ -1,16 +1,16 @@
-include(../SumBrownianMotions/SumBrownianMotionsConsole.pri)
+include(SumBrownianMotionsConsole.pri)
 
 SOURCES += \
-    ../SumBrownianMotions/qtsumbrownianmotionsmaindialog.cpp \
-    ../SumBrownianMotions/qtsumbrownianmotionsmaindialog_test.cpp \
-    ../SumBrownianMotions/qtsumbrownianmotionsmenudialog.cpp
+    $$PWD/qtsumbrownianmotionsmaindialog.cpp \
+    $$PWD/qtsumbrownianmotionsmaindialog_test.cpp \
+    $$PWD/qtsumbrownianmotionsmenudialog.cpp
 
 
 HEADERS  += \
-    ../SumBrownianMotions/qtsumbrownianmotionsmaindialog.h \
-    ../SumBrownianMotions/qtsumbrownianmotionsmenudialog.h
+    $$PWD/qtsumbrownianmotionsmaindialog.h \
+    $$PWD/qtsumbrownianmotionsmenudialog.h
 
 FORMS += \
-    ../SumBrownianMotions/qtsumbrownianmotionsmaindialog.ui \
-    ../SumBrownianMotions/qtsumbrownianmotionsmenudialog.ui
+    $$PWD/qtsumbrownianmotionsmaindialog.ui \
+    $$PWD/qtsumbrownianmotionsmenudialog.ui
 

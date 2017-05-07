@@ -1,17 +1,17 @@
-INCLUDEPATH += ../SumBrownianMotions
+INCLUDEPATH += $$PWD
 
 SOURCES += \
-    ../SumBrownianMotions/simulation.cpp \
-    ../SumBrownianMotions/simulation_test.cpp \
-    ../SumBrownianMotions/parameters.cpp \
-    ../SumBrownianMotions/parameters_test.cpp \
-    ../SumBrownianMotions/sumbrownianmotionsmenudialog.cpp
+    $$PWD/simulation.cpp \
+    $$PWD/simulation_test.cpp \
+    $$PWD/parameters.cpp \
+    $$PWD/parameters_test.cpp \
+    $$PWD/sumbrownianmotionsmenudialog.cpp
 
 HEADERS  += \
-    ../SumBrownianMotions/simulation.h \
-    ../SumBrownianMotions/parameters.h \
-    ../SumBrownianMotions/sumbrownianmotionsmenudialog.h
+    $$PWD/simulation.h \
+    $$PWD/parameters.h \
+    $$PWD/sumbrownianmotionsmenudialog.h
 
 RESOURCES += \
-    SumBrownianMotions.qrc
+    $$PWD/SumBrownianMotions.qrc
 
